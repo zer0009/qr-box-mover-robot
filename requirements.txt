@@ -1,0 +1,6 @@
+opencv-python
+pyzbar
+numpy
+RPi.GPIO
+pyserial-asyncio
+PyYAML 

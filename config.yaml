@@ -1,0 +1,47 @@
+arm:
+  port: "/dev/ttyUSB0"
+  baudrate: 115200
+  home_position: [0, 0, 150]
+  pickup_height: 30
+  pickup_position: [100, 100, 150]
+  storage_position: [200, 200, 150]
+  
+chassis:
+  pins:
+    front_left:
+      pwm: 18
+      dir: 23
+    front_right:
+      pwm: 12
+      dir: 24
+    back_left:
+      pwm: 13
+      dir: 25
+    back_right:
+      pwm: 19
+      dir: 26
+      
+camera:
+  camera_id: 0
+  resolution: [640, 480]
+  
+sensors:
+  min_distance: 20
+  sensor_pins:
+    front:
+      trigger: 17
+      echo: 27
+    left:
+      trigger: 22
+      echo: 5
+    right:
+      trigger: 6
+      echo: 16
+    back:
+      trigger: 23
+      echo: 24
+    
+map:
+  width: 1000
+  height: 1000
+  map_file: "map/warehouse.json" 
